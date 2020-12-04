@@ -17,4 +17,14 @@ Notes:
 
 def last(a, n):
     # Your code here
+    if n < 0 or n > len(a):
+        print("invalid")
+    else:
+        print(a[len(a)-n:])
+    
+
+last([1, 2, 3, 4, 5], 1)  
+last([4, 3, 9, 9, 7, 6], 3)  
+last([1, 2, 3, 4, 5], 7)  
+last([1, 2, 3, 4, 5], 0)  
 
