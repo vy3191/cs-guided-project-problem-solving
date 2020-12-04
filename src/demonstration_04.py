@@ -25,4 +25,18 @@ Notes:
 
 def emotify(txt):
     # Your code here
+    str ="Make me "
+    for word in txt.split(" "):
+        if word != "Make" and  word != "me":
+            if word == "smile":
+                str += ":D"
+            elif word == "grin":
+                str += ":)"
+            else:
+                str += ":("   
+    print(str)                       
+    return str
+emotify("Make me smile")
+emotify("Make me grin") 
+emotify("Make me sad")                
 
