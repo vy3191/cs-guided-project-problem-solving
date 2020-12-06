@@ -14,4 +14,16 @@ Examples:
 """
 def repeat_it(input_str):
     # Your code here
-
+    result = input_str[0].upper()
+    count = 1
+    for i in range(1,len(input_str)):
+        result += "-"+input_str[i].upper()+ (input_str[i].lower()) * count
+        count += 1
+    print(result)    
+    return result   
+repeat_it("abcd") 
+repeat_it("RqaEzty")
+repeat_it("cwAt")
+  
+        
+        
