@@ -15,5 +15,21 @@ Examples:
 """
 def get_middle(input_str):
     # Your code here
+    if len(input_str) == 1 or len(input_str) == 2:
+        print(input_str)
+        return input_str
+    length = len(input_str)
+    if length % 2 == 0:
+        middle = int(length / 2)
+        print(input_str[middle-1: middle+1])
+    else:
+        print(input_str[length // 2])
+
+get_middle("test")  
+get_middle("testing") 
+get_middle("middle")  
+get_middle("A")   
+            
+        
 
 
