@@ -11,5 +11,12 @@ Examples:
 """
 def parity(input_int):
     # Your code here
+    if input_int % 2 == 0:
+        print("Even")
+    else:
+        print("Odd")    
+parity(0)  
+parity(1) 
+parity(2)       
 
 
