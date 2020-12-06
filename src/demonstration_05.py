@@ -1,3 +1,5 @@
+import datetime
+
 """
 Challenge #5:
 
@@ -23,4 +25,17 @@ Notes:
 """
 def data_type(value):
     # Your code here
+    if type(value).__name__ == "dict":
+        print("dictionary")
+    elif type(value).__name__ == "str":
+        print("string")
+    else:
+        print(type(value).__name__)
+                
+
+data_type([1, 2, 3, 4])
+data_type({'key': "value"}) 
+data_type("This is an example string.")
+data_type(datetime.date(2018,1,1))
+
 
