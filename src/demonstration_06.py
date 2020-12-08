@@ -16,6 +16,7 @@ def get_count(input_str):
         "o": True,
         "u": True
     }
+
     count = 0
     for char in input_str:
         if char not in vowels:

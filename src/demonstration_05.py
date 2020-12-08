@@ -27,9 +27,11 @@ def data_type(value):
     # Your code here
     if type(value).__name__ == "dict":
         print("dictionary")
+        return "dictionary"
     elif type(value).__name__ == "str":
         print("string")
     else:
+        print(type(value))
         print(type(value).__name__)
                 
 
